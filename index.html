@@ -82,7 +82,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+    <div class="toggle" aria-label="Toggle navigation bar">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -109,27 +109,27 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>Über</a>
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Schlagwörter</a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Kategorien</a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
   </ul>
@@ -158,6 +158,65 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zn-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/blog.png">
+      <meta itemprop="name" content="橘色芒果诺">
+      <meta itemprop="description" content="爬亿爬">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橘色芒果诺的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="post-title-link" itemprop="url">我的第七次作业</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-05-03 21:18:29 / Modified: 21:22:35" itemprop="dateCreated datePublished" datetime="2020-05-03T21:18:29+08:00">2020-05-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="将必应壁纸第一页的壁纸全部下载下来，然后将代码以及代码的解释用markdown写出来上传到博客上"><a href="#将必应壁纸第一页的壁纸全部下载下来，然后将代码以及代码的解释用markdown写出来上传到博客上" class="headerlink" title="将必应壁纸第一页的壁纸全部下载下来，然后将代码以及代码的解释用markdown写出来上传到博客上"></a>将必应壁纸第一页的壁纸全部下载下来，然后将代码以及代码的解释用markdown写出来上传到博客上</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BingCrawler</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.BASE_URL = <span class="string">"https://bing.ioliu.cn"</span></span><br><span class="line">        self.TOTAL_PAGE = <span class="number">124</span></span><br><span class="line">        self.headers = &#123;</span><br><span class="line">            <span class="string">"user-agent"</span>: <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">spider</span><span class="params">(self)</span>:</span></span><br><span class="line">        session = requests.Session()</span><br><span class="line">        <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">1</span> ,self.TOTAL_PAGE+<span class="number">1</span>):</span><br><span class="line">            url = self.BASE_URL + <span class="string">f"/?p=<span class="subst">&#123;index&#125;</span>"</span></span><br><span class="line">            response = session.get(url=url, headers=self.headers)</span><br><span class="line">            <span class="keyword">yield</span> response.content.decode(<span class="string">"utf8"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parser</span><span class="params">(html)</span>:</span></span><br><span class="line">        selector = etree.HTML(html)</span><br><span class="line">        url_list = selector.xpath(<span class="string">"//div[@class='item']//div[@class='options']/a[2]/@href"</span>)</span><br><span class="line">        <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">save_picture</span><span class="params">(self, url_list)</span>:</span></span><br><span class="line">        session = requests.Session()</span><br><span class="line">        <span class="keyword">for</span> url <span class="keyword">in</span> url_list:</span><br><span class="line">            file_name = url.split(<span class="string">"/"</span>)[<span class="number">2</span>][:<span class="number">-15</span>] + <span class="string">".jpg"</span></span><br><span class="line">            picture_url =  self.BASE_URL + url</span><br><span class="line">            response = session.get(picture_url, headers=self.headers)</span><br><span class="line">            <span class="keyword">with</span> open(file_name, <span class="string">"wb"</span>) <span class="keyword">as</span> file:</span><br><span class="line">                file.write(response.content)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        html_gen = self.spider()</span><br><span class="line">        <span class="keyword">for</span> html <span class="keyword">in</span> html_gen:</span><br><span class="line">            url_list = self.parser(html)</span><br><span class="line">            self.save_picture(url_list)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    bing_spider = BingCrawler()</span><br><span class="line">    bing_spider.run()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zn-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -180,10 +239,10 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 21:09:51 / Geändert am: 21:12:01" itemprop="dateCreated datePublished" datetime="2020-05-03T21:09:51+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 21:09:51 / Modified: 21:12:01" itemprop="dateCreated datePublished" datetime="2020-05-03T21:09:51+08:00">2020-05-03</time>
             </span>
 
           
@@ -1379,10 +1438,10 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 20:52:11 / Geändert am: 20:52:28" itemprop="dateCreated datePublished" datetime="2020-05-03T20:52:11+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 20:52:11 / Modified: 20:52:28" itemprop="dateCreated datePublished" datetime="2020-05-03T20:52:11+08:00">2020-05-03</time>
             </span>
 
           
@@ -1485,10 +1544,10 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 19:27:31 / Geändert am: 19:29:54" itemprop="dateCreated datePublished" datetime="2020-05-03T19:27:31+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 19:27:31 / Modified: 19:29:54" itemprop="dateCreated datePublished" datetime="2020-05-03T19:27:31+08:00">2020-05-03</time>
             </span>
 
           
@@ -1651,10 +1710,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 18:10:48 / Geändert am: 18:16:25" itemprop="dateCreated datePublished" datetime="2020-05-03T18:10:48+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 18:10:48 / Modified: 18:16:25" itemprop="dateCreated datePublished" datetime="2020-05-03T18:10:48+08:00">2020-05-03</time>
             </span>
 
           
@@ -1711,10 +1770,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 15:50:07 / Geändert am: 15:54:19" itemprop="dateCreated datePublished" datetime="2020-05-03T15:50:07+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 15:50:07 / Modified: 15:54:19" itemprop="dateCreated datePublished" datetime="2020-05-03T15:50:07+08:00">2020-05-03</time>
             </span>
 
           
@@ -1770,10 +1829,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 15:46:27 / Geändert am: 15:47:15" itemprop="dateCreated datePublished" datetime="2020-05-03T15:46:27+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 15:46:27 / Modified: 15:47:15" itemprop="dateCreated datePublished" datetime="2020-05-03T15:46:27+08:00">2020-05-03</time>
             </span>
 
           
@@ -1842,10 +1901,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 15:38:02 / Geändert am: 15:39:29" itemprop="dateCreated datePublished" datetime="2020-05-03T15:38:02+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 15:38:02 / Modified: 15:39:29" itemprop="dateCreated datePublished" datetime="2020-05-03T15:38:02+08:00">2020-05-03</time>
             </span>
 
           
@@ -1863,7 +1922,7 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/#more" rel="contents">
-                Weiterlesen &raquo;
+                Read more &raquo;
               </a>
             </div>
           <!--/noindex-->
@@ -1908,10 +1967,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Erstellt: 2020-05-03 15:30:32 / Geändert am: 15:32:39" itemprop="dateCreated datePublished" datetime="2020-05-03T15:30:32+08:00">2020-05-03</time>
+              <time title="Created: 2020-05-03 15:30:32 / Modified: 15:32:39" itemprop="dateCreated datePublished" datetime="2020-05-03T15:30:32+08:00">2020-05-03</time>
             </span>
 
           
@@ -1988,10 +2047,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          Table of Contents
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          Overview
         </li>
       </ul>
 
@@ -2012,8 +2071,8 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">posts</span>
         </a>
       </div>
   </nav>
@@ -2044,10 +2103,10 @@ print(json.loads(resp.read().decode(&quot;utf-8&quot;)))</code></pre><p>crawler(
   </span>
   <span class="author" itemprop="copyrightHolder">橘色芒果诺</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Design – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.1
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.1
   </div>
 
         
