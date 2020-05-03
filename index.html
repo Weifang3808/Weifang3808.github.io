@@ -158,6 +158,66 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zn-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/blog.png">
+      <meta itemprop="name" content="橘色芒果诺">
+      <meta itemprop="description" content="爬亿爬">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橘色芒果诺的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="post-title-link" itemprop="url">我的第三次作业</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              <time title="Erstellt: 2020-05-03 18:10:48 / Geändert am: 18:16:25" itemprop="dateCreated datePublished" datetime="2020-05-03T18:10:48+08:00">2020-05-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="第三次作业"><a href="#第三次作业" class="headerlink" title="第三次作业"></a>第三次作业</h2><p>title: 我的第三次作业<br>date: 2020-05-03 18:10:48<br>tags:<br>import urllib.parse<br>import urllib.request<br>def crawler():<br>    url = “<a href="https://cn.bing.com/ttranslatev3?isVertical=1&amp;&amp;IG=2B73CBCDC8F54EAFABF49389E29DC19A&amp;IID=translator.5028.2&quot;" target="_blank" rel="noopener">https://cn.bing.com/ttranslatev3?isVertical=1&amp;&amp;IG=2B73CBCDC8F54EAFABF49389E29DC19A&amp;IID=translator.5028.2&quot;</a><br>    form_data = {<br>        “fromLang”: “auto-detect”,<br>        “text”: [input(“请输入：”)],<br>        “to”: “en”<br>    }<br>    data = bytes(urllib.parse.urlencode(form_data), encoding=’utf8’)<br>    response = urllib.request.urlopen(url, data=data)<br>    print(response.read().decode(‘utf-8’))<br>if <strong>name</strong> == “<strong>main</strong>“:<br>    crawler()</p>
+<p>请输入：汽车<br>[{“detectedLanguage”:{“language”:”zh-Hans”,”score”:1.0},”translations”:[{“text”:”(‘Cars’)”,”to”:”en”,”sentLen”:{“srcSentLen”:[6],”transSentLen”:[8]}}]}]</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zn-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -481,7 +541,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">Artikel</span>
         </a>
       </div>
